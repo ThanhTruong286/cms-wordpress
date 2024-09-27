@@ -23,9 +23,6 @@
 # Example plugin
 /wp-content/plugins/hello.php
 
-# Uploads
-/wp-content/uploads/
-
 # Log files
 *.log
 
