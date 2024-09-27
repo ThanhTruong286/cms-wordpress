@@ -1,5 +1,5 @@
 <?php
-get_header();
+get_template_part('parts/header');
 
 while (have_posts()):
     the_post();
@@ -7,5 +7,5 @@ while (have_posts()):
     the_content();
 endwhile;
 
-get_footer();
+get_template_part('parts/footer');
 ?>
