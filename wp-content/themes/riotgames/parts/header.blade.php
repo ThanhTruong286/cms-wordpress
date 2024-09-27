@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title><?php bloginfo('Riot Games'); ?> | <?php bloginfo('description'); ?></title>
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>../assets/images/riotfav.png" type="image/x-icon">
+
     <?php wp_head(); ?>
     <!-- Gọi hàm wp_head() của WordPress để nạp các script, stylesheet và meta tags cần thiết trước khi kết thúc thẻ <head>. -->
 </head>
