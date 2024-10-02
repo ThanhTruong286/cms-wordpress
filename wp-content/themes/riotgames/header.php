@@ -1,4 +1,3 @@
-<!-- File: header.php -->
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -10,21 +9,16 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-    <header class="site-header">
-        <div class="logo-container">
-            <a href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"
-                    alt="<?php bloginfo('name'); ?>" class="site-logo">
-            </a>
-        </div>
-        <nav class="   main-navigation">
+<body>
+    <header>
+        <div class="container">
             <?php
-            // Hiển thị menu chính
-            wp_nav_menu(array(
-                'theme_location' => 'primary',
-                'menu_class' => 'nav-menu',
-            ));
-            ?>
-        </nav>
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'top-menu',
+                    'menu_class' => 'top-bar'
+                )
+            )
+                ?>
+        </div>
     </header>
